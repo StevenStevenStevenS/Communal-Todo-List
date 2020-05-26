@@ -130,7 +130,7 @@
         },
 
         updateServer: function () {
-          fetch('http://localhost:3000/todos/update', {
+          fetch('http://jacobbarrett.ninja/communal-todo-list/todos/update', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ todos: this.todos })
@@ -146,7 +146,7 @@
         },
 
         updatePage: function () {
-          fetch('http://localhost:3000/todos/update')
+          fetch('http://jacobbarrett.ninja/communal-todo-list/todos/update')
             .then(x => x.json())
             .then(x => {
                 console.log(x);
